@@ -1,0 +1,50 @@
+.Herosection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Heroleftbox {
+  width: 40%;
+  /* height: 50%; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* justify-content: space-around; */
+}
+
+.pricing-button {
+  border: 2px solid #3e7b27;
+  background-color: #123524;
+  border-radius: 20px;
+  margin: 10px 0;
+  padding: 10px 10px;
+  font-size: auto;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Heroleftbox {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+/* mobile - 1 */
+@media (max-width: 640px) {
+  .Herocontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Heroleftbox {
+    width: 100%;
+    align-self: center;
+  }
+  .pricing-button {
+    width: 100%;
+    text-align: center;
+  }
+}

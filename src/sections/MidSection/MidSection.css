@@ -1,0 +1,45 @@
+.Midcontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  /* width: 100%; */
+}
+
+.Midleftbox {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.image-container {
+  display: flex;
+  gap: 5px;
+}
+.aboutImage {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  flex-direction: row;
+}
+.abouttext h2 {
+  color: #86a788;
+}
+
+@media (max-width: 890px) {
+  .Midleftbox {
+    width: 100%;
+    /* background-color: green; */
+  }
+  .aboutImage {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .Midleftbox {
+    width: 100%;
+    /* background-color: brown; */
+  }
+  .aboutImage {
+    width: 100%;
+  }
+}

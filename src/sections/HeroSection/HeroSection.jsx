@@ -5,28 +5,30 @@ import plantimageimport from "./PLANT.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="Herosection">
-      <div className="Heroleftbox">
-        <h1>
-          Grow Beautiful <br /> Nature at <br /> Home
-        </h1>
-        <p>
-          Discover beautiful, low maintenance <br />
-          house plant that breathe <br />
-          life into your space-delivered straight to your door
-        </p>
-        <div>
-          <a href="#" className="pricing-button">
-            learn more
+    <section className="hero-section">
+      <div className="hero-content">
+        <div className="hero-text">
+          <h1 className="hero-title">
+            Grow Beautiful <span className="highlight">Nature</span> at Home
+          </h1>
+          <p className="hero-description">
+            Discover beautiful, low maintenance house plants that breathe life into your space—delivered straight to your door.
+          </p>
+          <a href="#" className="cta-button">
+            Learn More
           </a>
         </div>
+        <div className="hero-image-container">
+          <div className="image-wrapper">
+            <img
+              src={plantimageimport}
+              alt="Beautiful house plant"
+              className="hero-image"
+            />
+            <div className="image-overlay"></div>
+          </div>
+        </div>
       </div>
-      <img
-        src={plantimageimport}
-        alt="plant"
-        style={{ width: "300px", height: "auto" }}
-        className="Heroleftbox"
-      />
     </section>
   );
 };

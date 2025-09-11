@@ -6,16 +6,16 @@ import plantsimage from "./plantss.jpg";
 const MidSection = () => {
   return (
     <>
-      <section className="Midcontainer ">
+      <section id="collection" className="Midcontainer ">
         <div className="Midleftbox">
-          <h2>
+          <h2 id="collection-title">
             More than 40 plants in <br />
             our collection right at <br />
             your fingertips
           </h2>
-          <p>See full collection</p>
+          <p id="collection-link">See full collection</p>
         </div>
-        <div className="image-container">
+        <div id="plant-gallery" className="image-container">
           <img
             src={plantsImage}
             alt="plants-image"

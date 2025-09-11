@@ -5,16 +5,16 @@ import plantimageimport from "./PLANT.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section id="hero" className="hero-section">
       <div className="hero-content">
         <div className="hero-text">
-          <h1 className="hero-title">
+          <h1 id="hero-title" className="hero-title">
             Grow Beautiful <span className="highlight">Nature</span> at Home
           </h1>
-          <p className="hero-description">
+          <p id="hero-description" className="hero-description">
             Discover beautiful, low maintenance house plants that breathe life into your space—delivered straight to your door.
           </p>
-          <a href="#" className="cta-button">
+          <a href="#collection" id="hero-cta" className="cta-button">
             Learn More
           </a>
         </div>

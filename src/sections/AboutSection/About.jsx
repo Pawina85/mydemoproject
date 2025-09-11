@@ -4,18 +4,19 @@ import plantingimport from "./planting.jpg";
 
 function About() {
   return (
-    <section className="about-container">
+    <section id="about" className="about-container">
       <img
         src={plantingimport}
         alt="plant"
+        id="about-image"
         className="about-image"
         style={{
           width: "200px",
           height: "auto",
         }}
       />
-      <div className="abouttext">
-        <h2>About Us</h2>
+      <div id="about-content" className="abouttext">
+        <h2 id="about-title">About Us</h2>
         <p>
           "Plants teach us some of life's most brimportant lessons. <br /> They
           remind us that growth takes time, patience, <br />
@@ -34,7 +35,7 @@ function About() {
         </p>
       </div>
       <div>
-        <a href="#" className="second-button">
+        <a href="#hero" id="about-cta" className="second-button">
           learn more
         </a>
       </div>

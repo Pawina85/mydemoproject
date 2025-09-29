@@ -1,39 +1,111 @@
-.nav {
-  width: 100%;
-  /* border: 2px solid #010101; */
-  min-height: 5rem;
-  height: auto;
-  max-width: 100vw;
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Quicksand:wght@300..700&display=swap");
+
+.navbar {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  background: white;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   box-sizing: border-box;
+  z-index: 1000;
+}
+
+.navbar__logo {
+  font-family: "Playwrite IT Moderna", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d5016;
 }
 
 .nav-mid-buttons {
   display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-size: larger;
+  gap: 2rem;
+  align-items: center;
 }
-.first-button {
-  border: 2px solid blue;
-  color: black;
-  border-radius: 10px;
-  margin: 10px 0;
-  padding: 10px 10px;
-  font-size: auto;
+
+.nav-link {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Quicksand:wght@300..700&display=swap");
+.nav-link:hover {
+  color: #123524;
+}.nav-right {
+  display: flex;
+  align-items: center;
+}
 
-h1 {
-  font-family: "Playwrite IT Moderna", sans-serif;
+.contact-button {
+  background: transparent;
+  border: 2px solid #123524;
+  color: #123524;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
 }
-.logo {
-  font-size: small;
+
+.contact-button:hover {
+  background-color: #123524;
+  color: white;
 }
+
+.first-button:hover {
+  background-color: transparent;
+  color: #123524;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(18, 53, 36, 0.15);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar__links button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar__links button:hover {
+  color: #2d5016;
+}
+
+.navbar__btn {
+  background: transparent;
+  border: 1px solid #2d5016;
+  color: #2d5016;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.navbar__btn:hover {
+  background-color: #2d5016;
+  color: white;
+}
+
+

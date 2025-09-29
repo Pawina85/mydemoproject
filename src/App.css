@@ -1,5 +1,14 @@
-/* .App {
+ .App {
   text-align: center;
+  padding-top: 4.5rem; /* To account for fixed navbar */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#hero, #mid, #about {
+  scroll-margin-top: 4.5rem; /* To account for fixed navbar when scrolling to sections */
 }
 
 .App-logo {

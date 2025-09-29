@@ -8,10 +8,16 @@ import HeroSection from "./sections/HeroSection/HeroSection";
 function App() {
   return (
     <div className="App">
-      <NavBar></NavBar>
-      <HeroSection></HeroSection>
-      <MidSection></MidSection>
-      <About />
+      <NavBar />
+      <div id="hero">
+        <HeroSection />
+      </div>
+      <div id="mid">
+        <MidSection />
+      </div>
+      <div id="about">
+        <About />
+      </div>
     </div>
   );
 }

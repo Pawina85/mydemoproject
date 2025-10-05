@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   background: white;
-  border-bottom: 1px solid #eee;
+  /* border-bottom: 1px solid #eee; */
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
@@ -19,7 +19,7 @@
   font-family: "Playwrite IT Moderna", sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
-  color: #2d5016;
+  color: #000000;
 }
 
 .nav-mid-buttons {
@@ -34,7 +34,7 @@
   font-size: 1rem;
   color: #333;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 19px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -80,6 +80,7 @@
   background: none;
   border: none;
   font-size: 1rem;
+  font-weight: bold;
   color: #333;
   cursor: pointer;
   text-decoration: none;

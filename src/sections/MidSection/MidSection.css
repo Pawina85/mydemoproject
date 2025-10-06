@@ -1,45 +1,239 @@
 .Midcontainer {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-  /* width: 100%; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
 }
 
 .Midleftbox {
+  flex: 1;
+  max-width: 500px;
+}
+
+.content-wrapper {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  gap: 2rem;
 }
+
+.mid-title {
+  font-size: 2.5rem;
+  color: #123524;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.mid-title:hover {
+  transform: translateX(10px);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.plant-category-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.plant-category-card:hover {
+  transform: translateY(-5px);
+  background: #e8f5e9;
+  box-shadow: 0 10px 20px rgba(18, 53, 36, 0.1);
+}
+
+.category-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #123524;
+  margin-bottom: 0.5rem;
+}
+
+.category-name {
+  color: #666;
+  font-size: 0.9rem;
+}
+
 .image-container {
   display: flex;
-  gap: 5px;
+  gap: 1.5rem;
+  flex: 1;
 }
+
+.image-overlay-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.image-overlay-container:hover {
+  transform: translateY(-10px) rotate(2deg);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
 .aboutImage {
-  margin-bottom: 20px;
-  border-radius: 10px;
-  flex-direction: row;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
 }
-.abouttext h2 {
-  color: #86a788;
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(18, 53, 36, 0.9), transparent);
+  padding: 2rem 1rem 1rem;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.image-overlay-container:hover .image-overlay {
+  transform: translateY(0);
+}
+
+.image-overlay p {
+  color: white;
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.collection-link {
+  display: inline-block;
+  color: #123524;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.collection-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #123524;
+  transition: width 0.3s ease;
+}
+
+.collection-link:hover::after {
+  width: 100%;
+}
+
+.stats-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #123524;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 1024px) {
+  .Midcontainer {
+    padding: 3rem 1.5rem;
+  }
+
+  .mid-title {
+    font-size: 2.2rem;
+  }
+
+  .aboutImage {
+    width: 200px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 890px) {
-  .Midleftbox {
-    width: 100%;
-    /* background-color: green; */
+  .Midcontainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .aboutImage {
-    width: 100%;
+
+  .Midleftbox {
+    max-width: 100%;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-row {
+    justify-content: center;
   }
 }
 
 @media (max-width: 640px) {
-  .Midleftbox {
-    width: 100%;
-    /* background-color: brown; */
+  .Midcontainer {
+    padding: 2rem 1rem;
   }
+
+  .mid-title {
+    font-size: 1.8rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .aboutImage {
     width: 100%;
+    max-width: 300px;
+    height: 250px;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 }

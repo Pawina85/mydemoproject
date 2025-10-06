@@ -65,6 +65,16 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        <div className="hero-image-container">
+          <div className="image-wrapper">
+            <img
+              src={plantimageimport}
+              alt="Beautiful house plant"
+              className="hero-image"
+            />
+            <div className="image-overlay"></div>
+          </div>
+        </div>
       </div>
     </section>
   );
